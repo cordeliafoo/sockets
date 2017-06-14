@@ -3,7 +3,7 @@ var socket
 function setup () {
   createCanvas(windowWidth, windowHeight)
   background(51)
-  socket = io.connect('http://localhost:8000/')
+  socket = io.connect('https://socketxdraw.herokuapp.com')
   socket.on('mouse', newDrawing)
 }
 
